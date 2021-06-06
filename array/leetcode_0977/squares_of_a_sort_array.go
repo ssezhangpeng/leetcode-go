@@ -8,7 +8,7 @@ func sortedSquares(nums []int) []int {
 	ans := make([]int, length)
 
 	for l <= r {
-		if nums[l] * nums[l] > nums[r] * nums[r] {
+		if nums[l]*nums[l] > nums[r]*nums[r] {
 			ans[pos] = nums[l] * nums[l]
 			l++
 		} else {
