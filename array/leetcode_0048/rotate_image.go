@@ -1,6 +1,6 @@
 package leetcode_0048
 
-func rotate(matrix [][]int)  {
+func rotate(matrix [][]int) {
 	m := len(matrix)
 	n := len(matrix[0])
 
@@ -16,7 +16,7 @@ func rotate(matrix [][]int)  {
 
 func rotateCore(matrix [][]int, tr, tc, dr, dc int) {
 	times := dc - tc
-	for i:=0; i<times; i++ {
+	for i := 0; i < times; i++ {
 		temp := matrix[tr][tc+i]
 		matrix[tr][tc+i] = matrix[dc-i][tc]
 		matrix[dc-i][tc] = matrix[dr][dc-i]

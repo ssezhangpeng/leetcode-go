@@ -6,7 +6,7 @@ func search(nums []int, target int) bool {
 
 	l, r := 0, len-1
 	for l <= r {
-		mid := l + (r-l) >> 1
+		mid := l + (r-l)>>1
 		if nums[mid] == target {
 			return true
 		}

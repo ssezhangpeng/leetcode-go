@@ -4,8 +4,8 @@ func plusOne(digits []int) []int {
 	return plusOneCore(digits, 1)
 }
 
-func plusOneCore(digits []int, carry int) []int{
-	for i:= len(digits)-1; i>=0; i-- {
+func plusOneCore(digits []int, carry int) []int {
+	for i := len(digits) - 1; i >= 0; i-- {
 		digits[i] += carry
 		carry = digits[i] / 10
 		digits[i] %= 10
@@ -17,4 +17,3 @@ func plusOneCore(digits []int, carry int) []int{
 	}
 	return digits
 }
-

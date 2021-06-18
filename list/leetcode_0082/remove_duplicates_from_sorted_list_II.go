@@ -1,7 +1,7 @@
 package leetcode_0082
 
 type ListNode struct {
-	Val int
+	Val  int
 	Next *ListNode
 }
 

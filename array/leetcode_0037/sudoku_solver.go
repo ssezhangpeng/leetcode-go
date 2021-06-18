@@ -1,7 +1,7 @@
 package leetcode_0037
 
 // ref: https://www.cnblogs.com/grandyang/p/4421852.html
-func solveSudoku(board [][]byte)  {
+func solveSudoku(board [][]byte) {
 	solveSudokuCore(board, 0, 0)
 }
 
@@ -17,7 +17,7 @@ func solveSudokuCore(board [][]byte, i, j int) bool {
 	if board[i][j] != '.' {
 		return solveSudokuCore(board, i, j+1)
 	}
-	for c:='1'; c<='9'; c++ {
+	for c := '1'; c <= '9'; c++ {
 		if !isValid(board, i, j, byte(c)) {
 			continue
 		}
@@ -33,21 +33,21 @@ func solveSudokuCore(board [][]byte, i, j int) bool {
 
 func isValid(board [][]byte, i, j int, c byte) bool {
 	// check row
-	for col:=0; col<9; col++ {
+	for col := 0; col < 9; col++ {
 		if board[i][col] == c {
 			return false
 		}
 	}
 	// check col
-	for row:=0; row<9; row++ {
+	for row := 0; row < 9; row++ {
 		if board[row][j] == c {
 			return false
 		}
 	}
 	// check box
-	tr, tc := i - i%3, j - j%3
-	for row:=0; row<3; row++ {
-		for col:=0; col<3; col++ {
+	tr, tc := i-i%3, j-j%3
+	for row := 0; row < 3; row++ {
+		for col := 0; col < 3; col++ {
 			if board[row+tr][col+tc] == c {
 				return false
 			}

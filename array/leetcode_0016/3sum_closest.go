@@ -21,7 +21,7 @@ func threeSumClosest(nums []int, target int) int {
 	minDist := math.MaxInt8
 	ans := 0
 	sort.Ints(nums)
-	for i:=0; i<len; i++ {
+	for i := 0; i < len; i++ {
 		l, r := i+1, len-1
 		for l < r {
 			sum := nums[i] + nums[l] + nums[r]

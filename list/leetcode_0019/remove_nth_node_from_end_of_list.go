@@ -1,7 +1,7 @@
 package leetcode_0019
 
 type ListNode struct {
-	Val int
+	Val  int
 	Next *ListNode
 }
 
@@ -11,7 +11,7 @@ func removeNthFromEnd(head *ListNode, n int) *ListNode {
 	pre.Next = head
 
 	slow, fast := pre, pre
-	for i:=0; i<n; i++ {
+	for i := 0; i < n; i++ {
 		fast = fast.Next
 	}
 

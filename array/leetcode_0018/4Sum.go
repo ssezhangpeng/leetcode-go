@@ -11,12 +11,12 @@ func fourSum(nums []int, target int) [][]int {
 
 	sort.Ints(nums)
 
-	for i:=0; i<len; i++ {
-		if i>0 && nums[i]==nums[i-1] {
+	for i := 0; i < len; i++ {
+		if i > 0 && nums[i] == nums[i-1] {
 			continue
 		}
-		for j:=i+1; j<len; j++ {
-			if j>i+1 && nums[j]==nums[j-1] {
+		for j := i + 1; j < len; j++ {
+			if j > i+1 && nums[j] == nums[j-1] {
 				continue
 			}
 			l, r := j+1, len-1
@@ -26,8 +26,10 @@ func fourSum(nums []int, target int) [][]int {
 					ans = append(ans, []int{nums[i], nums[j], nums[l], nums[r]})
 					l++
 					r--
-					for ;l<r && nums[l]==nums[l-1];l++ {}
-					for ;l<r && nums[r]==nums[r+1];r-- {}
+					for ; l < r && nums[l] == nums[l-1]; l++ {
+					}
+					for ; l < r && nums[r] == nums[r+1]; r-- {
+					}
 				} else if sum < target {
 					l++
 				} else {

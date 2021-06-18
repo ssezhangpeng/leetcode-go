@@ -1,7 +1,7 @@
 package leetcode_0092
 
 type ListNode struct {
-	Val int
+	Val  int
 	Next *ListNode
 }
 
@@ -37,7 +37,7 @@ func reverseBetween(head *ListNode, left int, right int) *ListNode {
 	return dummy.Next
 }
 
-func reverse(head *ListNode) (*ListNode, *ListNode){
+func reverse(head *ListNode) (*ListNode, *ListNode) {
 	var dummy ListNode
 	pre := &dummy
 

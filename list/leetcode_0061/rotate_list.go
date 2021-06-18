@@ -1,7 +1,7 @@
 package leetcode_0061
 
 type ListNode struct {
-	Val int
+	Val  int
 	Next *ListNode
 }
 
@@ -21,7 +21,7 @@ func rotateRight(head *ListNode, k int) *ListNode {
 
 	p = head
 	dist := len - k
-	for i:=0; i<dist-1; i++ {
+	for i := 0; i < dist-1; i++ {
 		p = p.Next
 	}
 
