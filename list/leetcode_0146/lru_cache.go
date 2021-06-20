@@ -37,7 +37,6 @@ func (this *LRUCache) Get(key int) int {
 
 	node, _ := elem.Value.(*Node)
 
-	fmt.Println("front: ", this.CacheList.Front().Value.(list.Element).Value.(*Node).Key)
 	return node.Value
 }
 
@@ -45,16 +44,16 @@ func (this *LRUCache) Put(key int, value int) {
 	if _, ok := this.CacheMap[key]; !ok {
 		if this.Capacity == this.Size {
 			// replacement
-			last := this.CacheList.Back()
+			lastElem := this.CacheList.Back()
 
-			node, _ := last.Value.(list.Element).Value.(*Node)
+			node, _ := lastElem.Value.(*Node)
 			delete(this.CacheMap, node.Key)
-			this.CacheList.Remove(last)
+			this.CacheList.Remove(lastElem)
 			this.Size--
 		}
-		elem := list.Element{Value: &Node{Key: key, Value: value}}
-		this.CacheList.PushFront(elem)
-		this.CacheMap[key] = &elem
+		node := &Node{Key: key, Value: value}
+		elem := this.CacheList.PushFront(node)
+		this.CacheMap[key] = elem
 		this.Size++
 	} else {
 		// update node's Value
