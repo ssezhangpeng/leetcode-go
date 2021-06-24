@@ -1,4 +1,4 @@
-package leetcode_242
+package leetcode_0242
 
 func isAnagram(s string, t string) bool {
 	if len(s) != len(t) {
