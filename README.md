@@ -4,7 +4,7 @@
 - 未理解的题目
     - leetcode_0004
     - leetcode_0134
-    - leetcode_0044 (`exceed time`)
+    - leetcode_0044 (`exceed time out`)
     
 - 值得再看的题目
     - leetcode_0010 (**regular expression matching**)
@@ -17,8 +17,13 @@
 - 单调栈
     - leetcode_0084
     - leetcode_0042
-
+    - leetcode_0402[✔]
+    - leetcode_0316
+    - leetcode_0321
+    
+    
 ```go
 // 提交代码前对项目进行格式标准化操作
-go fmt ./ ...
+[windows] goland: Tools -> GoTools -> Go Fmt Project
+[Mac]     goland: 
 ```
