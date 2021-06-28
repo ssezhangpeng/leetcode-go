@@ -13,13 +13,9 @@
 
 - 经典算法
     - KMP (leetcode_0028)
-    
-- 单调栈
-    - leetcode_0084
-    - leetcode_0042
-    - leetcode_0402[✔]
-    - leetcode_0316
-    - leetcode_0321
+   
+- 刷题模板 
+    - 单调栈
     
     
 ```go
