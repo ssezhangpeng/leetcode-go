@@ -1,7 +1,5 @@
 package leetcode_0109
 
-import "math/bits"
-
 type ListNode struct {
 	Val  int
 	Next *ListNode
@@ -26,9 +24,15 @@ func sortedListToBSTCore(head *ListNode) *TreeNode {
 		return nil
 	}
 
-	preMid := getPreMid(head)
-	mid := preMid.Next
+	pre, mid := getPreMid(head)
+
+	if pre == mid {
+		return &TreeNode{Val: mid.Val}
+	}
+
+	pre.Next = nil
 	newHead := mid.Next
+	mid.Next = nil
 
 	root := &TreeNode{Val: mid.Val}
 	root.Left = sortedListToBSTCore(head)
@@ -37,6 +41,16 @@ func sortedListToBSTCore(head *ListNode) *TreeNode {
 	return root
 }
 
-func getPreMid(head *ListNode) *ListNode {
-	return nil
+func getPreMid(head *ListNode) (pre *ListNode, mid *ListNode) {
+	if head == nil {
+		return nil, nil
+	}
+
+	pre, slow, fast := head, head, head
+	for fast != nil && fast.Next != nil {
+		pre = slow
+		slow = slow.Next
+		fast = fast.Next.Next
+	}
+	return pre, slow
 }
