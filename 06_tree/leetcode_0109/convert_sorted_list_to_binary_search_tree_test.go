@@ -45,7 +45,7 @@ func printTreeByLevel(root *TreeNode) {
 func TestSortedListToBSTCore(t *testing.T) {
 	head := generateList()
 
-	root := sortedListToBSTCore(head)
+	root := sortedListToBST(head)
 
 	printTreeByLevel(root)
 }

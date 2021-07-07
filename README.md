@@ -9,7 +9,6 @@
 - 值得再看的题目
     - leetcode_0010 (**regular expression matching**)
     - leetcode_0044 (**wildcard matching**)
-    - leetcode_0109 (**leetcode报语法错，单测正常**)
 
 - 经典算法
     - KMP (leetcode_0028)
@@ -17,6 +16,7 @@
 - 刷题模板 
     - 单调栈
     - 树的 Morris 遍历
+    - [二叉树路径和问题](https://leetcode-cn.com/problems/path-sum-ii/solution/yi-pian-wen-zhang-jie-jue-suo-you-er-cha-oo63/)
     
 ```go
 // 提交代码前对项目进行格式标准化操作
