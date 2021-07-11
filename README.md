@@ -17,7 +17,7 @@
     - 单调栈
     - 树的 Morris 遍历
     - [二叉树路径和问题](https://leetcode-cn.com/problems/path-sum-ii/solution/yi-pian-wen-zhang-jie-jue-suo-you-er-cha-oo63/)
-    
+    - [回溯法](https://leetcode-cn.com/problems/permutations/solution/hui-su-suan-fa-python-dai-ma-java-dai-ma-by-liweiw/)
 ```go
 // 提交代码前对项目进行格式标准化操作
 [windows] goland: Tools -> GoTools -> Go Fmt Project
