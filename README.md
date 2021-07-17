@@ -13,6 +13,7 @@
 
 - 经典算法
     - KMP (leetcode_0028)
+    - Trie 树 (leetcode_0212)
    
 - 刷题模板 
     - 单调栈
