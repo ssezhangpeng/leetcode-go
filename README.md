@@ -14,6 +14,10 @@
 - 经典算法
     - KMP (leetcode_0028)
     - Trie 树 (leetcode_0212)
+    
+- 系列题目
+    - jump game
+    - best time to buy and sell stock
    
 - 刷题模板 
     - 单调栈
