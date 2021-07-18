@@ -17,7 +17,7 @@
     
 - 系列题目
     - jump game
-    - best time to buy and sell stock
+    - best time to buy and sell stock[动态规划]
    
 - 刷题模板 
     - 单调栈
