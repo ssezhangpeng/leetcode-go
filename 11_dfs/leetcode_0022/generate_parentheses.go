@@ -1,6 +1,9 @@
 package leetcode_0022
 
-import "strings"
+import (
+	"fmt"
+	"strings"
+)
 
 func generateParenthesis(n int) []string {
 	var ans []string
@@ -15,6 +18,7 @@ func backtracking(left, right, start, n int, path []string, ans *[]string) {
 	if left == 0 && right == 0 {
 		s := strings.Join(path, "")
 		*ans = append(*ans, s)
+		fmt.Println("ans: ", ans)
 		return
 	}
 

@@ -1,26 +1,20 @@
 package leetcode_0020
 
-import "github.com/emirpasic/gods/stacks/linkedliststack"
-
 func isValid(s string) bool {
-	stk := linkedliststack.New()
+	stk := make([]byte, 0)
 
-	for i := 0; i < len(s); i++ {
-		if s[i] == '(' || s[i] == '[' || s[i] == '{' {
-			stk.Push(s[i])
+	for i:=0; i<len(s); i++ {
+		if len(stk) == 0 || s[i] == '(' || s[i] == '[' || s[i] == '{' {
+			stk = append(stk, s[i])
 		} else {
-			if stk.Empty() {
-				return false
-			}
-			topVal, _ := stk.Peek()
-			if s[i] == ')' && topVal.(byte) == '(' ||
-				s[i] == '}' && topVal.(byte) == '{' ||
-				s[i] == ']' && topVal.(byte) == '[' {
-				stk.Pop()
+			ch := stk[len(stk)-1]
+			if (s[i] == ')' && ch == '(') || (s[i] == ']' && ch == '[') || (s[i] == '}' && ch == '{') {
+				stk = stk[:len(stk)-1]
 			} else {
 				return false
 			}
 		}
 	}
-	return stk.Empty()
+
+	return len(stk) == 0
 }

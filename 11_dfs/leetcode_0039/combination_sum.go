@@ -16,7 +16,6 @@ func backtracking(candidates []int, sum, target, start int, path []int, ans *[][
 	if sum == target {
 		temp := make([]int, len(path))
 		copy(temp, path)
-		sort.Ints(temp)
 		*ans = append(*ans, temp)
 		return
 	}
