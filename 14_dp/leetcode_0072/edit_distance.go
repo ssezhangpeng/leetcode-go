@@ -12,7 +12,7 @@ package leetcode_0072
 func minDistance(word1 string, word2 string) int {
 	m := len(word1)
 	n := len(word2)
-	// dp[i][j] 标识 word1[0->i][0->j] 的最小编辑距离
+	// dp[i][j] 标识 word1[0->i]到 word2[0->j] 的最小编辑距离
 	dp := make([][]int, m+1)
 	for i := 0; i <= m; i++ {
 		dp[i] = make([]int, n+1)

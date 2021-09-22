@@ -25,29 +25,28 @@ func maximalRectangle(matrix [][]byte) int {
 // leetcode_0084
 func largestRectangleArea(heights []int) int {
 	maxArea := 0
-	var stk []int
-	heights = append(heights, 0)
+	var incrStack []int
 
-	for i := 0; i < len(heights); {
-		if len(stk) == 0 {
-			stk = append(stk, i)
+	// 最后追加一个 0, 是为了处理递增的 heights, 这样最后也能进行一次收尾处理
+	heights = append(heights, 0)
+	for i:=0; i<len(heights); {
+		if len(incrStack) == 0 || heights[incrStack[len(incrStack)-1]] < heights[i] {
+			incrStack = append(incrStack, i)
 			i++
 		} else {
-			topVal := stk[len(stk)-1]
-			if heights[topVal] < heights[i] {
-				stk = append(stk, i)
-				i++
-			} else {
-				stk = stk[:len(stk)-1]
-				width := i
-				if len(stk) > 0 {
-					l := stk[len(stk)-1]
-					width = i - l - 1
-				}
-				maxArea = max(maxArea, heights[topVal]*width)
+			index := incrStack[len(incrStack)-1]
+			incrStack = incrStack[:len(incrStack)-1]
+
+			currHeight := heights[index]
+			currWidth := i
+			if len(incrStack) > 0 {
+				currWidth = i - incrStack[len(incrStack)-1] - 1
 			}
+
+			maxArea = max(maxArea, currWidth * currHeight)
 		}
 	}
+
 	return maxArea
 }
 
