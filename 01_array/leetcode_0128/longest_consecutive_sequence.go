@@ -1,18 +1,15 @@
 package leetcode_0128
 
-import "math"
-
 func longestConsecutive(nums []int) int {
-	m := make(map[int]bool)
+	exist := make(map[int]bool)
 	used := make(map[int]bool)
 
-	for i := 0; i < len(nums); i++ {
-		m[nums[i]] = true
-		used[nums[i]] = false
+	for i:=0; i<len(nums); i++ {
+		exist[nums[i]] = true
 	}
 
 	maxLength := 0
-	for i := 0; i < len(nums); i++ {
+	for i:=0; i<len(nums); i++ {
 		if used[nums[i]] {
 			continue
 		}
@@ -20,18 +17,24 @@ func longestConsecutive(nums []int) int {
 		used[nums[i]] = true
 		currLength := 1
 
-		for j := nums[i] + 1; m[j] && !used[j]; j++ {
+		for j:=nums[i]+1; exist[j] && !used[j]; j++ {
 			used[j] = true
-			currLength++
+			currLength += 1
 		}
 
-		for j := nums[i] - 1; m[j] && !used[j]; j-- {
+		for j:=nums[i]-1; exist[j] && !used[j]; j-- {
 			used[j] = true
-			currLength++
+			currLength += 1
 		}
 
-		maxLength = int(math.Max(float64(maxLength), float64(currLength)))
+		maxLength = max(maxLength, currLength)
 	}
-
 	return maxLength
+}
+
+func max(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
 }
