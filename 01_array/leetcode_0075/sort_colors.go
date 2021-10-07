@@ -1,9 +1,9 @@
 package leetcode_0075
 
-func sortColors(nums []int)  {
-	red, blue := 0, len(nums) - 1
+func sortColors(nums []int) {
+	red, blue := 0, len(nums)-1
 
-	for i:=0; i<=blue; i++ {
+	for i := 0; i <= blue; i++ {
 		if nums[i] == 0 {
 			nums[red], nums[i] = nums[i], nums[red]
 			red++

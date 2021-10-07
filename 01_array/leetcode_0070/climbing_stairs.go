@@ -6,8 +6,8 @@ func climbStairs(n int) int {
 	}
 
 	before, after := 1, 2
-	for i:=3; i<=n; i++ {
-		before, after = after, before + after
+	for i := 3; i <= n; i++ {
+		before, after = after, before+after
 	}
 
 	return after

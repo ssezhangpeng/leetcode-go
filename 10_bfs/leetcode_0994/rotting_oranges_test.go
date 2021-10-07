@@ -3,7 +3,7 @@ package leetcode_0994
 import "testing"
 
 func TestRottingOranges(t *testing.T) {
-	input := [][]int {{2, 1, 1},{1,1,0},{0,1,1}}
+	input := [][]int{{2, 1, 1}, {1, 1, 0}, {0, 1, 1}}
 
 	ans := orangesRotting(input)
 

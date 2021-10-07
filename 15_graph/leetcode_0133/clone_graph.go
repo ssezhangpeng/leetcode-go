@@ -1,7 +1,7 @@
 package leetcode_0133
 
 type Node struct {
-	Val int
+	Val       int
 	Neighbors []*Node
 }
 
@@ -22,7 +22,7 @@ func cloneGraph(node *Node) *Node {
 
 	// 克隆节点，但不会克隆该节点的邻居节点
 	cloneNode := &Node{
-		Val: node.Val,
+		Val:       node.Val,
 		Neighbors: make([]*Node, len(node.Neighbors)),
 	}
 
@@ -30,7 +30,7 @@ func cloneGraph(node *Node) *Node {
 	m[node] = cloneNode
 
 	// 遍历该节点的所有邻居节点，并更新克隆节点的邻居节点
-	for i:=0; i<len(node.Neighbors); i++ {
+	for i := 0; i < len(node.Neighbors); i++ {
 		cloneNode.Neighbors[i] = cloneGraph(node.Neighbors[i])
 	}
 

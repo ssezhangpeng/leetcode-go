@@ -14,7 +14,7 @@ func backTracking(path []byte, start int, ans *[]string) {
 	// 递归出口
 	*ans = append(*ans, string(path))
 
-	for i:=start; i<len(path); i++ {
+	for i := start; i < len(path); i++ {
 		if isDigit(path[i]) {
 			continue
 		}

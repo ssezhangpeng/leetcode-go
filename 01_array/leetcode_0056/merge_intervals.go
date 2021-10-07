@@ -12,7 +12,7 @@ func merge(intervals [][]int) [][]int {
 
 	ans = append(ans, intervals[0])
 
-	for i:=1; i<len(intervals); i++ {
+	for i := 1; i < len(intervals); i++ {
 		last := ans[len(ans)-1]
 		current := intervals[i]
 		if current[0] <= last[1] {
@@ -31,4 +31,3 @@ func max(a, b int) int {
 	}
 	return b
 }
-

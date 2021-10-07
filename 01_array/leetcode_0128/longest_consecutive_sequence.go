@@ -4,12 +4,12 @@ func longestConsecutive(nums []int) int {
 	exist := make(map[int]bool)
 	used := make(map[int]bool)
 
-	for i:=0; i<len(nums); i++ {
+	for i := 0; i < len(nums); i++ {
 		exist[nums[i]] = true
 	}
 
 	maxLength := 0
-	for i:=0; i<len(nums); i++ {
+	for i := 0; i < len(nums); i++ {
 		if used[nums[i]] {
 			continue
 		}
@@ -17,12 +17,12 @@ func longestConsecutive(nums []int) int {
 		used[nums[i]] = true
 		currLength := 1
 
-		for j:=nums[i]+1; exist[j] && !used[j]; j++ {
+		for j := nums[i] + 1; exist[j] && !used[j]; j++ {
 			used[j] = true
 			currLength += 1
 		}
 
-		for j:=nums[i]-1; exist[j] && !used[j]; j-- {
+		for j := nums[i] - 1; exist[j] && !used[j]; j-- {
 			used[j] = true
 			currLength += 1
 		}

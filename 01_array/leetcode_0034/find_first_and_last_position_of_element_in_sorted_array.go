@@ -12,10 +12,10 @@ func searchRange(nums []int, target int) []int {
 }
 
 func findFirst(nums []int, target int) int {
-	l, r := 0, len(nums) - 1
+	l, r := 0, len(nums)-1
 
 	for l <= r {
-		mid := l + (r - l) >> 1
+		mid := l + (r-l)>>1
 		if nums[mid] == target {
 			if mid == l || nums[mid-1] != target {
 				return mid
@@ -33,10 +33,10 @@ func findFirst(nums []int, target int) int {
 }
 
 func findLast(nums []int, target int) int {
-	l, r := 0, len(nums) - 1
+	l, r := 0, len(nums)-1
 
 	for l <= r {
-		mid := l + (r - l) >> 1
+		mid := l + (r-l)>>1
 		if nums[mid] == target {
 			if mid == r || nums[mid+1] != target {
 				return mid

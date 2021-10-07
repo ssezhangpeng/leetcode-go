@@ -7,7 +7,7 @@ func minWindow(s string, t string) string {
 	need := make(map[uint8]int)
 
 	// 记录匹配字符串中的元素和对应个数
-	for i:=0; i<len(t); i++ {
+	for i := 0; i < len(t); i++ {
 		need[t[i]]++
 	}
 
@@ -31,7 +31,7 @@ func minWindow(s string, t string) string {
 
 		// 如果找到一个覆盖区间，则尝试寻找下一个更短的区间
 		for valid == len(need) {
-			if right - left < minLength {
+			if right-left < minLength {
 				start = left
 				minLength = right - left
 			}
@@ -51,5 +51,5 @@ func minWindow(s string, t string) string {
 		return ""
 	}
 
-	return s[start: start+minLength]
+	return s[start : start+minLength]
 }

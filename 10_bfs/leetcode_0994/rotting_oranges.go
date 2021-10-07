@@ -7,8 +7,8 @@ func orangesRotting(grid [][]int) int {
 	fresh := 0
 	queue := make([][]int, 0)
 
-	for i:=0; i<rows; i++ {
-		for j:=0; j<cols; j++ {
+	for i := 0; i < rows; i++ {
+		for j := 0; j < cols; j++ {
 			if grid[i][j] == 2 {
 				queue = append(queue, []int{i, j})
 			} else if grid[i][j] == 1 {
@@ -27,7 +27,7 @@ func orangesRotting(grid [][]int) int {
 
 	for len(queue) > 0 {
 		size := len(queue)
-		for i:=0; i<size; i++ {
+		for i := 0; i < size; i++ {
 			point := queue[0]
 			queue = queue[1:]
 

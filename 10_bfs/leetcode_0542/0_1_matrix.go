@@ -4,8 +4,8 @@ func updateMatrix(mat [][]int) [][]int {
 	rows, cols := len(mat), len(mat[0])
 	queue := make([][]int, 0)
 
-	for i:=0; i<rows; i++ {
-		for j:=0; j<cols; j++ {
+	for i := 0; i < rows; i++ {
+		for j := 0; j < cols; j++ {
 			if mat[i][j] == 0 {
 				point := []int{i, j}
 				queue = append(queue, point)
@@ -34,4 +34,3 @@ func updateMatrix(mat [][]int) [][]int {
 
 	return mat
 }
-

@@ -26,4 +26,3 @@ func isSymmetricCore(p, q *TreeNode) bool {
 		isSymmetricCore(p.Left, q.Right) &&
 		isSymmetricCore(p.Right, q.Left)
 }
-

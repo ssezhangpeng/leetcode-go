@@ -3,7 +3,7 @@ package leetcode_0020
 func isValid(s string) bool {
 	stk := make([]byte, 0)
 
-	for i:=0; i<len(s); i++ {
+	for i := 0; i < len(s); i++ {
 		if len(stk) == 0 || s[i] == '(' || s[i] == '[' || s[i] == '{' {
 			stk = append(stk, s[i])
 		} else {
