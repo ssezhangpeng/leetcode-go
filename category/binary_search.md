@@ -10,8 +10,10 @@
 ### 二分法
 - leetcode_0033
 - leetcode_0034
-- leetcode_0081
 - leetcode_0035
+- leetcode_0081
+- leetcode_0053
+- leetcode_0154
 - leetcode_0704
 
 总结参考 [二分查找](https://leetcode-cn.com/problems/search-insert-position/solution/te-bie-hao-yong-de-er-fen-cha-fa-fa-mo-ban-python-/)
