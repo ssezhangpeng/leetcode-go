@@ -2,8 +2,8 @@
 - leetcode_0019
 - leetcode_0141
 - leetcode_0142
-- leetcode_0202(doing)
-- leetcode_0234(doing)
+- leetcode_0202
+- leetcode_0234
 - leetcode_0287
 - leetcode_0876
 
