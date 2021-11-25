@@ -1,5 +1,4 @@
 # leetcode-go
-**followed by leetcode-cpp**
 
 - 未理解的题目
     - leetcode_0004
