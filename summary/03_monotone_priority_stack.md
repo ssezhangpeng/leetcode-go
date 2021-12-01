@@ -3,8 +3,8 @@
 - leetcode_0084
 - leetcode_0496
 - leetcode_0402
-- leetcode_0316(UNDO)
-- leetcode_0321(UNDO)
+- leetcode_0316
+- leetcode_0321
 - leetcode_0503
 - leetcode_0739
 
