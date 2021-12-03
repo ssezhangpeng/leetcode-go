@@ -4,7 +4,6 @@
 - leetcode_0076
 - leetcode_0159(PLUS)
 - leetcode_0209
-- leetcode_0239(UNDO)
 - leetcode_0340(UNDO)
 - leetcode_0395(UNDO)
 - leetcode_0424(UNDO)
