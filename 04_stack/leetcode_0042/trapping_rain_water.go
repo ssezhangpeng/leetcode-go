@@ -1,24 +1,26 @@
 package leetcode_0042
 
 func trap(height []int) int {
-	water := 0
-	var stk []int
+	var water int
+	var stack []int
 
-	for i := 0; i < len(height); {
-		if len(stk) == 0 || height[i] <= height[stk[len(stk)-1]] {
-			stk = append(stk, i)
-			i++
-		} else {
-			down := stk[len(stk)-1]
-			stk = stk[:len(stk)-1]
-			if len(stk) == 0 {
+	for i := 0; i < len(height); i++ {
+		// 尝试持续出栈
+		for len(stack) > 0 && height[i] > height[stack[len(stack)-1]] {
+			top := stack[len(stack)-1]
+			stack = stack[:len(stack)-1]
+
+			if len(stack) == 0 {
 				continue
 			}
-			left := stk[len(stk)-1]
-			wid := i - left - 1
-			hei := min(height[left], height[i]) - height[down]
-			water += wid * hei
+
+			left := stack[len(stack)-1]
+			h := min(height[i], height[left]) - height[top]
+			w := i - left - 1
+
+			water += h * w
 		}
+		stack = append(stack, i)
 	}
 
 	return water
