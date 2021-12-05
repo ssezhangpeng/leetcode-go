@@ -7,8 +7,7 @@
 - leetcode_0340(PLUS)
 - leetcode_0395(UNDO变形题)
 - leetcode_0424
-- leetcode_0992(UNDO)
-- leetcode_1248(UNDO)
+- leetcode_0992
 
 ### 解题模版
 ```go
