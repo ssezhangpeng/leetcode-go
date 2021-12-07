@@ -3,9 +3,9 @@
 - leetcode_0102
 - leetcode_0111
 - leetcode_0127
-- leetcode_0207(UNDO)
-- leetcode_0490(UNDO)
-- leetcode_0505(UNDO)
+- leetcode_0207
+- leetcode_0490(PLUS)
+- leetcode_0505(PLUS)
 
 
 ### 解题模版
