@@ -7,8 +7,11 @@
 - leetcode_0207
 - leetcode_0490(PLUS)
 - leetcode_0505(PLUS)
-- leetcode_0542(UNDO)
-- leetcode_0994(UNDO)
+- leetcode_0542 [Trick](https://leetcode-cn.com/problems/01-matrix/solution/01ju-zhen-by-leetcode-solution/)
+- leetcode_0994 [Trick](https://leetcode-cn.com/problems/rotting-oranges/solution/fu-lan-de-ju-zi-by-leetcode-solution/)
+
+### Tricks
+- [多源BFS](https://leetcode-cn.com/problems/rotting-oranges/solution/fu-lan-de-ju-zi-by-leetcode-solution/)
 
 
 ### 解题模版
