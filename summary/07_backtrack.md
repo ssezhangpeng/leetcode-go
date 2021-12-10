@@ -9,6 +9,8 @@
 - leetcode_0093
 - leetcode_0131
 - leetcode_0216
+- leetcode_0301
+- leetcode_0494
 
 
 ### 解题模版
