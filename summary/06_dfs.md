@@ -3,7 +3,10 @@
 
 - leetcode_0130
 - leetcode_0200
+- leetcode_0329(TIMEOUT)
 - leetcode_0417
+- leetcode_0463
+- leetcode_0695
 - leetcode_0980
 
 
