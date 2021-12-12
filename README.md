@@ -13,7 +13,8 @@
     - [单调栈](https://github.com/ssezhangpeng/leetcode-go/blob/master/summary/03_monotone_priority_stack.md)
     - [滑动窗口](https://github.com/ssezhangpeng/leetcode-go/blob/master/summary/04_sliding_window.md)
     - [广度优先搜索](https://github.com/ssezhangpeng/leetcode-go/blob/master/summary/05_bfs.md)
-    - 深度优先搜索
+    - [深度优先搜索](https://github.com/ssezhangpeng/leetcode-go/blob/master/summary/06_dfs.md)
+    - [回溯](https://github.com/ssezhangpeng/leetcode-go/blob/master/summary/07_backtrack.md)
 
 ```go
 // 提交代码前对项目代码进行格式操作
