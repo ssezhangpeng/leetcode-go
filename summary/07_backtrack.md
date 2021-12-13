@@ -3,13 +3,14 @@
 - leetcode_0022
 - leetcode_0039
 - leetcode_0040
-- leetcode_0046(UNDO)
+- leetcode_0046
+- leetcode_0047
 - leetcode_0051(UNDO)
 - leetcode_0052(UNDO)
 - leetcode_0077(UNDO)
-- leetcode_0078(UNDO)
+- leetcode_0078
 - leetcode_0079(UNDO)
-- leetcode_0090(UNDO)
+- leetcode_0090
 - leetcode_0093(UNDO)
 - leetcode_0112(UNDO)
 - leetcode_0131(UNDO)
