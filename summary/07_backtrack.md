@@ -12,9 +12,9 @@
 - leetcode_0078
 - leetcode_0079(UNDO)
 - leetcode_0090
-- leetcode_0093(UNDO)
+- leetcode_0093
 - leetcode_0112(UNDO)
-- leetcode_0131(UNDO)
+- leetcode_0131
 - leetcode_0216
 - leetcode_0301(UNDO)
 - leetcode_0494(UNDO)
