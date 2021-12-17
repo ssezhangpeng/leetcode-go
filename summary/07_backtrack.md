@@ -8,10 +8,9 @@
 - leetcode_0046
 - leetcode_0047
 - leetcode_0051
-- leetcode_0052(UNDO)
+- leetcode_0052
 - leetcode_0077
 - leetcode_0078
-- leetcode_0079(UNDO)
 - leetcode_0090
 - leetcode_0093
 - leetcode_0112(UNDO)
