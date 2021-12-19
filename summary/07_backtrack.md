@@ -13,12 +13,12 @@
 - leetcode_0078
 - leetcode_0090
 - leetcode_0093
-- leetcode_0112(UNDO)
+- leetcode_0112
 - leetcode_0131
 - leetcode_0216
 - leetcode_0301(UNDO)
 - leetcode_0491
-- leetcode_0494(UNDO)
+- leetcode_0494
 
 ### 使用场景
 - 组合问题：N个数里面按一定规则找出k个数的集合
