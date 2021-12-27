@@ -71,4 +71,4 @@ func backtracking(candidates []int, start, sum, target int, path []int, ans *[][
 ```
 
 ### 专题总结
--[代码随想录](https://leetcode-cn.com/problems/permutations/solution/dai-ma-sui-xiang-lu-dai-ni-xue-tou-hui-s-mfrp/)
+- [代码随想录](https://leetcode-cn.com/problems/permutations/solution/dai-ma-sui-xiang-lu-dai-ni-xue-tou-hui-s-mfrp/)
