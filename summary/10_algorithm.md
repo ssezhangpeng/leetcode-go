@@ -14,3 +14,10 @@ func LCM(a, b int) int {
 	return a * b / GDC(a, b)
 }
 ```
+
+### TopK 问题
+```go
+func TopK(nums []int, k int) []int {
+	return nil
+}
+```
