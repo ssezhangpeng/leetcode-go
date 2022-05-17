@@ -21,3 +21,10 @@ func TopK(nums []int, k int) []int {
 	return nil
 }
 ```
+
+### KMP 问题
+```go
+- leetcode_0028
+- leetcode_0456
+https://www.programmercarl.com/0028.实现strStr.html#其他语言版本
+```
