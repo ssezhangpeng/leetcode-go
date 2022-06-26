@@ -28,3 +28,9 @@ func TopK(nums []int, k int) []int {
 - leetcode_0456
 https://www.programmercarl.com/0028.实现strStr.html#其他语言版本
 ```
+
+### 洗牌算法 问题
+```go
+- leetcode_0384
+https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle
+```
